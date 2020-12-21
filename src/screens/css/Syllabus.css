@@ -1,0 +1,57 @@
+.main-area {
+    display: flex;  
+    width: 55%;
+    flex: 0.6;
+    flex-direction: column;
+}
+
+.syllabus-area-container {
+    display: flex;
+    /* padding-left: 5%; */
+    padding-right: 10%;
+    /* width: 150%; */
+    flex: 1;
+    padding-bottom: 2%;
+}
+
+.sidebar { 
+    display: flex;
+    padding-right: "0%";
+}
+
+.marquee {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.marquee > p {
+    color: white;
+    font-size: 32px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .syllabus-area-container {
+        flex-direction: column;
+    }
+    .pdfFile {
+        display: none;
+    }
+    .pdfLink {
+        display: block;
+    }
+    .sidebar {
+        padding: "10%";
+    }
+    .main-area {
+        padding-left: 5%;
+    }
+    .main-area > h2 {
+        display: none;
+    }
+    .syllabus-container {
+        width: 150%;
+    }
+}

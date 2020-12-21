@@ -1,0 +1,12 @@
+.sidebar-link-container {
+    border-bottom: 1px solid lightgrey;
+    padding-left: 10%;
+    align-items: center;
+    padding-top: 2%;
+    cursor: pointer;
+}
+
+.sidebar-link-container:hover {
+    background-color:#d3d3d3;
+}
+

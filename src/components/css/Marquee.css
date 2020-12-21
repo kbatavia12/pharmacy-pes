@@ -1,0 +1,11 @@
+.marquee {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.marquee > p {
+    color: white;
+    font-size: 32px;
+}

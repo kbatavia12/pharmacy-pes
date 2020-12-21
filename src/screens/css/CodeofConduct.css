@@ -1,0 +1,34 @@
+.main-area {
+    display: flex;  
+    width: 55%;
+    flex: 0.6
+}
+
+.area-container {
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    flex: 1;
+    min-width: 500px;
+}
+
+.sidebar {
+    display: flex;
+    flex: 0.4;
+}
+
+.coc-container {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .area-container {
+        flex-direction: column;
+    }
+    .coc-container {
+        width: 150%;
+    }
+}

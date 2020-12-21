@@ -1,0 +1,16 @@
+.trustee-card-container {
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 731px) {
+    .trustee-card-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        width: 120%;
+    }
+}

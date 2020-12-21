@@ -1,0 +1,40 @@
+.main-area {
+    display: flex;  
+    width: 55%;
+    flex: 0.6;
+    flex-direction: column;
+}
+
+.admission-area-container {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 150%;
+    flex: 1;
+    padding-bottom: 2%;
+}
+
+
+.admission-container {
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.image-container > img {
+    width: 80%;
+}
+
+@media screen and (max-width: 500px) {
+    .area-container {
+        flex-direction: column;
+    }
+    .admission-container {
+        width: 150%;
+    }
+}

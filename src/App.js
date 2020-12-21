@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CodeofConduct from "./screens/CodeofConduct";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AdmissionProcedure from "./screens/AdmissionProcedure";
+import Syllabus from "./screens/Syllabus";
+import AboutInstitute from "./screens/AboutInstitute";
+import Mission from "./screens/Mission";
+import Whyus from "./screens/Whyus";
+import AcademicCalendar from "./screens/AcademicCalendar";
+import Faculty from "./screens/Faculty";
+import Home from "./screens/Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+          <Switch>
+            <Route strict path="/admission">
+              <AdmissionProcedure />
+            </Route>
+            <Route path="/code-of-conduct">
+              <CodeofConduct />
+            </Route>
+            <Route path="/syllabus">
+              <Syllabus />
+            </Route>
+            <Route path="/about">
+              <AboutInstitute />
+            </Route>
+            <Route path="/mission">
+              <Mission />
+            </Route>
+            <Route path="/academic-calendar">
+              <AcademicCalendar />
+            </Route>
+            <Route path="/faculty">
+              <Faculty />
+            </Route>
+            <Route path="/why-pesiop">
+              <Whyus />
+            </Route>
+            <Route strict path="/">
+              <Home/>
+            </Route>
+          </Switch>
+      </Router>
     </div>
   );
 }

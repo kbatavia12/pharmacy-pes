@@ -1,0 +1,46 @@
+.card-container {
+    display: flex;
+    width: 90%;
+    border: 1px solid lightgrey;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.image-container {
+    flex: 0.2;
+    padding: 0;
+}
+
+.image-container > img {
+    width: 90%;
+}
+
+.text-container {
+    flex: 0.6;
+    padding: 0;
+}
+
+.text-container > p {
+    padding: 0
+}
+
+@media screen and (max-width: 500px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border: 1px solid lightgrey;
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        flex: 0.6;
+        padding: 0;
+        align-items: center;
+    }
+
+
+}

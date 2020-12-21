@@ -1,0 +1,30 @@
+.trustee-card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+  background-color: #f3f3f3;
+}
+
+.trustee-card > img {
+  width: 35%;
+  align-self: center;
+}
+
+.trustee-card > h3 {
+  margin-top: 5%;
+  align-self: center;
+}
+
+.trustee-card > h6 {
+  align-self: center;
+}
+
+@media screen and (max-width: 731px) {
+  .trustee-card {
+    width: 85%;
+    margin-bottom: 10%;
+    padding: 5%;
+  }
+}

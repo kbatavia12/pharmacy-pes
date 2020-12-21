@@ -1,0 +1,14 @@
+.selector {
+    margin-left: 2%;
+    background-color: #42454A;
+    color: "white";
+}
+
+.option {
+    cursor: pointer;
+    color: "white";
+}
+
+.option:hover {
+    color: blue;
+}
