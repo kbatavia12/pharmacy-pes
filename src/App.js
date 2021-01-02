@@ -9,6 +9,7 @@ import Whyus from "./screens/Whyus";
 import AcademicCalendar from "./screens/AcademicCalendar";
 import Faculty from "./screens/Faculty";
 import Home from "./screens/Home";
+import Approval from "./screens/Approval";
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             </Route>
             <Route path="/why-pesiop">
               <Whyus />
+            </Route>
+            <Route path="/approval">
+              <Approval />
             </Route>
             <Route strict path="/">
               <Home/>

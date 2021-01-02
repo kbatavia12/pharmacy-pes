@@ -4,6 +4,7 @@
     border: 1px solid lightgrey;
     padding: 2%;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 
 .image-container {
@@ -28,7 +29,7 @@
     .card-container {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 200%;
         border: 1px solid lightgrey;
         padding: 2%;
         margin-bottom: 2%;

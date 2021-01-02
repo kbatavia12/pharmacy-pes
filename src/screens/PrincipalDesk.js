@@ -8,9 +8,7 @@ const PrincipalDesk = () => {
             <Navbar/>
             <TitleBar text = "From the Principal's Desk" />
             <div className = "desk-area-container" >
-                <div className = "sidebar">
-
-                </div>
+               
                 <div className = "main-area">
 
                 </div>

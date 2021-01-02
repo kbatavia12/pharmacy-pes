@@ -9,3 +9,9 @@
     color: white;
     font-size: 32px;
 }
+
+@media screen and (max-width: 500px) {
+    .marquee {
+        width: 300%;
+    }
+}

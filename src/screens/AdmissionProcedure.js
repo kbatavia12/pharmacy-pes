@@ -1,18 +1,20 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
 import "./css/AdmissionProcedure.css";
+
+
 
 const AdmissionProcedure = () => {
   return (
     <div className="admission-container">
       <Navbar />
       <TitleBar text="Admission Procedure" />
-      <div className="image-container">
-        {/* <img src="https://firebasestorage.googleapis.com/v0/b/school-test-app-e4e31.appspot.com/o/admission%20procedure%20image.png?alt=media&token=421a3124-4502-4e93-9aa1-7ba33f394c49"></img> */}
-      </div>
       <div className="admission-area-container">
+        
+        
         <div className="main-area">
           {/* Main area */}
           <div>
@@ -78,6 +80,7 @@ const AdmissionProcedure = () => {
       </div>
       <div>
           <Marquee/>
+          <Footer/>
         </div>
     </div>
   );

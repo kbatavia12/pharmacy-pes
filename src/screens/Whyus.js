@@ -1,7 +1,7 @@
 import React from "react";
+import Footer from "../components/Footer";
+import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import SidebarLink from "../components/SidebarLink";
 import TitleBar from "../components/TitleBar";
 import "./css/Whyus.css";
 
@@ -11,15 +11,6 @@ const Whyus = () => {
       <Navbar />
       <TitleBar text="Why PESIOP?" />
       <div className="whyus-area-container">
-        <div className="sidebar">
-          <Sidebar>
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-          </Sidebar>
-        </div>
         <div className="main-area">
           <h1>Why us</h1>
           <ul>
@@ -58,6 +49,8 @@ const Whyus = () => {
           </ul>
         </div>
       </div>
+      <Marquee/>
+      <Footer/>
     </div>
   );
 };

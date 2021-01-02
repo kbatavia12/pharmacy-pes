@@ -9,7 +9,7 @@
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-    width: 150%;
+    /* width: 150%; */
     flex: 1;
     padding-bottom: 2%;
 }
@@ -26,15 +26,12 @@
     margin-bottom: 1%;
 }
 
-.image-container > img {
-    width: 80%;
-}
 
 @media screen and (max-width: 500px) {
     .area-container {
         flex-direction: column;
     }
-    .admission-container {
+    /* .admission-container {
         width: 150%;
-    }
+    } */
 }

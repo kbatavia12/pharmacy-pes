@@ -1,8 +1,7 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import SidebarLink from "../components/SidebarLink";
 import TitleBar from "../components/TitleBar";
 import "./css/Mission.css";
 
@@ -10,16 +9,9 @@ const Mission = () => {
   return (
     <div className="mission-container">
       <Navbar />
-      <TitleBar text="Our Mission and Vision" />
+      <TitleBar text="Mission and Vision" />
       <div className="mission-area-container">
-        <div className="sidebar">
-          <Sidebar>
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-          </Sidebar>
-        </div>
+        
         <div className="mission-main-area">
           <h2>Vision and Mission</h2>
           <p className = "bigText">
@@ -54,6 +46,7 @@ const Mission = () => {
         </div>
       </div>
         <Marquee/>
+        <Footer/>
     </div>
   );
 };

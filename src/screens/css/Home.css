@@ -4,6 +4,34 @@
     justify-content: space-around;
 }
 
+.navigation-container {
+    display: flex;
+    justify-content: flex-end;
+    background: #00008B;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+a {
+    margin-right: 2%;
+    text-decoration: none;
+    text-emphasis: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+
+
 @media screen and (max-width: 731px) {
     .trustee-card-container {
         display: flex;
@@ -13,4 +41,31 @@
         align-items: center;
         width: 120%;
     }
+    .image-carousel {
+        margin-top: 10%;
+        align-self: center;
+        width: 125%;
+    }
+
+    .navigation-container {
+        display: none;
+    }
+
+    .mobile-navigation {
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-end; */
+        align-items: flex-end;
+    }
+    .mobile-navi-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    a {
+        color: black
+    }
+
 }

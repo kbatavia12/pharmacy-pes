@@ -8,9 +8,10 @@ const FacultyCard = ({
   qualification,
   email,
   name,
+  pressHandler
 }) => {
   return (
-    <div className="card-container">
+    <div className="card-container" onClick = {pressHandler} >
       <div className="image-container">
         <img src={image}></img>
       </div>

@@ -1,6 +1,6 @@
 .main-area {
     display: flex;  
-    /* width: 55%; */
+    width: 100%;
     flex: 0.6;
     flex-direction: column;
 }
@@ -13,16 +13,21 @@
     padding-bottom: 2%;
 }
 
+.staff-pdfFile {
+    margin-bottom: 10%;
+}
+
+
 @media screen and (max-width: 731px) {
     .faculty-area-container {
         flex-direction: column;
     }
-    .faculty-container {
+    /* .faculty-container {
         width: 200%;
     }
 
     .main-area {
         width: 150%;
-    }
+    } */
 
 }

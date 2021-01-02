@@ -6,7 +6,7 @@ const Marquee = () => {
     <div>
       <marquee className="marquee" bgcolor="#00008b">
         <p>
-          Toll free: 1010101010 | Admissions Open D.Pharm 2020-21
+          Phone Number: (0253) 2952295 | Admissions Open D.Pharm 2020-21
         </p>
       </marquee>
     </div>

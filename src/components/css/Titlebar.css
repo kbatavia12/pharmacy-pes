@@ -8,3 +8,9 @@
     width: 100%;
     flex:1
 }
+
+/* @media screen and (max-width: 731px) {
+    .title-bar {
+        width: 200%;
+    }
+} */

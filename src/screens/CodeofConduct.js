@@ -1,31 +1,18 @@
 import React from "react";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import SidebarLink from "../components/SidebarLink";
 import TitleBar from "../components/TitleBar";
 import "./css/CodeofConduct.css";
+import Footer from "../components/Footer";
+
 
 const CodeofConduct = () => {
-  
-
   return (
     <div className="coc-container">
       <Navbar className="navbar navbar-light navbar-collapse" />
-      <TitleBar text = "Code of Conduct" />
-    
+      <TitleBar text="Code of Conduct" />
+
       <div className="area-container">
-        <div className="sidebar">
-          <Sidebar>
-          <div>
-                <SidebarLink/>
-                <SidebarLink/>
-                <SidebarLink/>
-                <SidebarLink/>
-                <SidebarLink/>
-              </div>
-          </Sidebar>
-        </div>
         <div className="main-area">
           <p>
             Students are required to carry at all times their identity cards and
@@ -78,9 +65,8 @@ const CodeofConduct = () => {
           </p>
         </div>
       </div>
-      <div>
-          <Marquee/>
-        </div>
+      <Marquee />
+      <Footer />
     </div>
   );
 };

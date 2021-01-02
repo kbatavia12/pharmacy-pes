@@ -36,23 +36,23 @@
     .about-area-container {
         flex-direction: column;
     }
-    .about-container {
+    /* .about-container {
         width: 150%;
     }
     .main-area > img {
-        width: 200%;
+        width: 150%;
         height: 150%;
     }
     .main-area > p {
-        width: 200%;
+        width: 150%;
     }
     .main-area > h1 {
-        width: 200%;
+        width: 150%;
     }
     .main-area > h4 {
-        width: 200%;
+        width: 150%;
     }
     .letter-area {
-        width: 200%;
-    }
+        width: 150%;
+    } */
 }

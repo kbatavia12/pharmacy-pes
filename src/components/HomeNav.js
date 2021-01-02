@@ -1,15 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import './css/Navabar.css';
-import PES from '../assets/PES.png';
 
-const Navbar = () => {
 
+const HomeNav = () => {
+  
   return (
-    <nav class="navbar navbar-light navbar-collapse .d-none navbar-custom" style = {styles.navbarContainer} >
+    <nav class="navbar navbar-light navbar-collapse .d-none" style = {styles.navbarContainer} >
       <div className = "navbar-brand" href="#" style={styles.logoContainer}>
         <img
-          src={PES}
+          src="https://i.ibb.co/n6fYmzj/PES.png"
           width="25%"
           height="23%"
           alt=""
@@ -31,7 +32,6 @@ const Navbar = () => {
 const styles = {
   navbarContainer :{
     // maxWidth: "50%"
-    backgroundColor: "#f3f3f3"
   },
   logoContainer: {
     display: "flex",
@@ -39,7 +39,7 @@ const styles = {
   },
   logo: {
     // borderRadius: "100%",
-    // border: "0.005px solid white",
+    border: "0.005px solid white",
     cursor: "pointer",
   },
   smallText: {
@@ -67,4 +67,4 @@ const styles = {
   },
 };
 
-export default Navbar;
+export default HomeNav;

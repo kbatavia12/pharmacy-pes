@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import SidebarLink from "../components/SidebarLink";
 import TitleBar from "../components/TitleBar";
 import Marquee from "../components/Marquee";
 import "./css/AboutInstitute.css";
+import Footer from "../components/Footer";
 
 const AboutInstitute = () => {
   return (
@@ -13,14 +12,7 @@ const AboutInstitute = () => {
       <TitleBar text="About Us" />
 
       <div className="about-area-container">
-        <div className="sidebar">
-          <Sidebar>
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-          </Sidebar>
-        </div>
+        
         <div className="main-area">
           <h2>About us</h2>
           <img src="https://firebasestorage.googleapis.com/v0/b/school-test-app-e4e31.appspot.com/o/1_Photo%20-%201.jpg?alt=media&token=71ea7714-745c-4459-b79e-eaf22c4b1cb5"></img>
@@ -108,6 +100,7 @@ const AboutInstitute = () => {
         </div>
       </div>
       <Marquee />
+      <Footer/>
     </div>
   );
 };

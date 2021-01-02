@@ -24,7 +24,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 731px) {
     .area-container {
         flex-direction: column;
     }

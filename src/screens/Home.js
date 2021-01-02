@@ -1,17 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import TrusteeCard from "../components/TrusteeCard";
 import One from "../assets/Trustee1.png";
 import Two from "../assets/Trustee2.png";
 import Three from "../assets/Trustee3.png";
 import "./css/Home.css";
+import Marquee from "../components/Marquee";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+import MenuIcon from "@material-ui/icons/Menu";
+import HomeNav from "../components/HomeNav";
+import Slider from "../components/Slider";
+import Footer from "../components/Footer";
+import TopBar from "../components/TopBar";
 
 const Home = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <div>
-      <Navbar />
+      <TopBar/>
+      <HomeNav />
+      <div className="navigation-container">
+        <Link to="/">Home</Link>
+        <Link to="/admission">Admissions</Link>
+        <Link to="/academic-calendar">Academics</Link>
+        <Link to="/about">About</Link>
+      </div>
 
-      <div className="image-carousel"></div>
+
+      <div className="mobile-navigation">
+        <div onClick={() => setShow(!show)} className="icon">
+          <MenuIcon />
+        </div>
+        {show ? (
+          <div className="mobile-navi-links">
+            <Link to="/">Home</Link>
+            <Link to="/admission">Admissions</Link>
+            <Link to="/academic-calendar">Academics</Link>
+            <Link to="/about">About</Link>
+          </div>
+        ) : null}
+      </div>
+      
+
+      <div className="image-carousel">
+      <Slider />
+
+      </div>
       <div className="trustee-card-container">
         <TrusteeCard
           name="Narendrabhai Thakkar"
@@ -58,6 +94,8 @@ const Home = () => {
           and worldwide"
         />
       </div>
+      <Marquee />
+      <Footer/>
     </div>
   );
 };

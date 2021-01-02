@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import SidebarLink from "../components/SidebarLink";
 import TitleBar from "../components/TitleBar";
 import "./css/Syllabus.css";
 import pdfFile from "../assets/syllabus.pdf";
 import Marquee from "../components/Marquee";
+import Footer from "../components/Footer";
 
 
 const Syllabus = () => {
@@ -19,16 +18,7 @@ const Syllabus = () => {
       <TitleBar text="Syllabus" />
 
       <div className="syllabus-area-container">
-        <div className="sidebar">
-          <Sidebar>
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-            <SidebarLink />
-          </Sidebar>
-        </div>
+        
         <div className="main-area">
             <h2>Syllabus for D.Pharm</h2>
             <object className = "pdfFile" data = {pdfFile} type = "application/pdf" width = "110%" height = "800px">
@@ -38,6 +28,7 @@ const Syllabus = () => {
       </div>
         <div>
           <Marquee/>
+          <Footer/>
         </div>
     </div>
   );

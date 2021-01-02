@@ -29,7 +29,7 @@
     .mission-area-container {
         flex-direction: column;
     }
-    .mission-container {
+    /* .mission-container {
         width: 150%;
-    }
+    } */
 }
