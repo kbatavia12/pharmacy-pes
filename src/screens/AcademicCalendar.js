@@ -1,6 +1,7 @@
 import React from "react";
 import AcademicCalendarPdf from "../assets/Academic Calender 2020-21.pdf";
 import Footer from "../components/Footer";
+import LinkBar from "../components/LinkBar";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
@@ -11,6 +12,7 @@ const AcademicCalendar = () => {
     <div className="syllabus-container">
       <Navbar />
       <TitleBar text="Academic Calendar" />
+      <LinkBar/>
 
       <div className="syllabus-area-container">
         

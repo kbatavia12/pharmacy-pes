@@ -13,6 +13,7 @@ import MayurPdf from "../assets/STAFF PROFILE MS.pdf";
 import "./css/Faculty.css";
 import Marquee from "../components/Marquee";
 import Footer from "../components/Footer";
+import LinkBar from "../components/LinkBar";
 
 const Faculty = () => {
   
@@ -26,6 +27,8 @@ const Faculty = () => {
     <div>
       <Navbar />
       <TitleBar text="Faculty" />
+      <LinkBar/>
+
       <div className="faculty-area-container">
         <div className="main-area">
           <FacultyCard

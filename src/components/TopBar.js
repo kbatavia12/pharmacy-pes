@@ -10,9 +10,6 @@ const TopBar = () => {
       <a download href = {AdmForm} >
         <p className = "top-barLink">Admission Enquiry</p>
       </a>
-      <a  download href = {DTE} >
-        <p className = "top-barLink" >DTE Approval</p>
-      </a>
       <a className = "top-barLink">
         <p className = "top-barLink">(0253) 2952295</p>
       </a>

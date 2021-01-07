@@ -1,7 +1,9 @@
 import React from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import './css/Navabar.css';
+import LOGO from '../assets/mainLogo.png';
 import PES from '../assets/PES.png';
+
 
 const Navbar = () => {
 
@@ -10,8 +12,8 @@ const Navbar = () => {
       <div className = "navbar-brand" href="#" style={styles.logoContainer}>
         <img
           src={PES}
-          width="25%"
-          height="23%"
+          width = "20%"
+          height = "20%"
           alt=""
           style={styles.logo}
         />
@@ -23,6 +25,13 @@ const Navbar = () => {
             (Near Nimani Bus Stand, Panchavati, Nashik - 422003)
           </p>
         </div>
+        <img
+          src={LOGO}
+          width = "15%"
+          height = "15%"
+          alt=""
+          style={styles.logo}
+        />
       </div>
     </nav>
   );
@@ -35,7 +44,7 @@ const styles = {
   },
   logoContainer: {
     display: "flex",
-    maxWidth: "70%"
+
   },
   logo: {
     // borderRadius: "100%",
@@ -43,26 +52,27 @@ const styles = {
     cursor: "pointer",
   },
   smallText: {
-    fontSize: "24px",
+    fontSize: "32px",
     margin: "0px",
     fontWeight: "bold"
   },
   bigText: {
-    fontSize: "28px",
+    fontSize: "40px",
     margin: "0px",
     color: "#00008B",
-    fontWeight: "600",
+    fontWeight: "600", 
+    
   },
   name: {
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
     flexDirection: "column",
-    paddingLeft: "2%",
+    // paddingLeft: "2%",
     // width: "70%"
   },
   mediumText: {
-    fontSize: "16px",
+    fontSize: "24px",
     margin: "0px",
   },
 };

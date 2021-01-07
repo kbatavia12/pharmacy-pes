@@ -2,12 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
 import DTE from "../assets/DTE APPROVAL.pdf";
+import LinkBar from "../components/LinkBar";
 
 const Approval = () => {
   return (
     <div>
       <Navbar />
       <TitleBar text="Approvals and Affiliations" />
+      <LinkBar/>
 
       <div className="main-area">
         <h1>PCI Decision Letter</h1>

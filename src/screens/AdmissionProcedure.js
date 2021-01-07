@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import LinkBar from "../components/LinkBar";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
@@ -12,6 +13,9 @@ const AdmissionProcedure = () => {
     <div className="admission-container">
       <Navbar />
       <TitleBar text="Admission Procedure" />
+      <LinkBar/>
+
+     
       <div className="admission-area-container">
         
         

@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import LinkBar from "../components/LinkBar";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
@@ -10,12 +11,14 @@ const Whyus = () => {
     <div className="whyus">
       <Navbar />
       <TitleBar text="Why PESIOP?" />
+      <LinkBar/>
+
       <div className="whyus-area-container">
         <div className="main-area">
-          <h1>Why us</h1>
+          <h1>Why us   ???</h1>
           <ul>
             <li>Established in the Academic Year 2020-21</li>
-            <li>Courses: D. Pharmacy (DIP).</li>
+            <li>Courses: D. Pharmacy (DIP). (2 years)</li>
             <li>Faculty: M.Pharm. : 05 .</li>
             <li>
               Faculty members have attended various National and International
@@ -35,7 +38,7 @@ const Whyus = () => {
             </li>
             <li>Seminar Hall &Class room with LCD Projectors.</li>
             <li>Full Automation of Library &College office .</li>
-            <li>100 % assistance for admission for further education.</li>
+            <li>100% assistance for admission and higher education.</li>
             <li>Centrally located </li>
             <li>Fees Scholarship to D. Pharmacy students</li>
             <li>

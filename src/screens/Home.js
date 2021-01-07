@@ -13,6 +13,7 @@ import HomeNav from "../components/HomeNav";
 import Slider from "../components/Slider";
 import Footer from "../components/Footer";
 import TopBar from "../components/TopBar";
+import LinkBar from "../components/LinkBar";
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -21,13 +22,8 @@ const Home = () => {
     <div>
       <TopBar/>
       <HomeNav />
-      <div className="navigation-container">
-        <Link to="/">Home</Link>
-        <Link to="/admission">Admissions</Link>
-        <Link to="/academic-calendar">Academics</Link>
-        <Link to="/about">About</Link>
-      </div>
-
+      
+      <LinkBar/>
 
       <div className="mobile-navigation">
         <div onClick={() => setShow(!show)} className="icon">

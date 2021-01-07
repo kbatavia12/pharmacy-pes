@@ -1,3 +1,30 @@
+.navbar-custom {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    /* padding-right: 2%;
+    padding-left: 2%; */
+
+}
+
+.navbar-home {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.name-logo {
+    display: flex;
+}
+
+.name-logo > img {
+    height: 90%;
+    align-self: center;
+}
 
 
 @media only screen and (max-width: 731px) {

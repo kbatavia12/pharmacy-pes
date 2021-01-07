@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import LinkBar from "../components/LinkBar";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
@@ -10,6 +11,9 @@ const Mission = () => {
     <div className="mission-container">
       <Navbar />
       <TitleBar text="Mission and Vision" />
+
+      <LinkBar/>
+
       <div className="mission-area-container">
         
         <div className="mission-main-area">

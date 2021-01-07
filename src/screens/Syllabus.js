@@ -5,6 +5,7 @@ import "./css/Syllabus.css";
 import pdfFile from "../assets/syllabus.pdf";
 import Marquee from "../components/Marquee";
 import Footer from "../components/Footer";
+import LinkBar from "../components/LinkBar";
 
 
 const Syllabus = () => {
@@ -16,6 +17,7 @@ const Syllabus = () => {
     <div className = "syllabus-container" >
       <Navbar />
       <TitleBar text="Syllabus" />
+      <LinkBar/>
 
       <div className="syllabus-area-container">
         

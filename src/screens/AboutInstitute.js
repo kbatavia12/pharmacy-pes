@@ -4,12 +4,14 @@ import TitleBar from "../components/TitleBar";
 import Marquee from "../components/Marquee";
 import "./css/AboutInstitute.css";
 import Footer from "../components/Footer";
+import LinkBar from "../components/LinkBar";
 
 const AboutInstitute = () => {
   return (
     <div className="about-container">
       <Navbar />
       <TitleBar text="About Us" />
+      <LinkBar/>
 
       <div className="about-area-container">
         
