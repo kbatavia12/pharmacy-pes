@@ -7,9 +7,14 @@ import AboutInstitute from "./screens/AboutInstitute";
 import Mission from "./screens/Mission";
 import Whyus from "./screens/Whyus";
 import AcademicCalendar from "./screens/AcademicCalendar";
-import Faculty from "./screens/Faculty";
+import Faculty from "./screens/FacultyD";
 import Home from "./screens/Home";
 import Approval from "./screens/Approval";
+import StudentAchievements from "./screens/StudentAchievements";
+import PrincipalsMessage from "./screens/PrincipalsMessage";
+import FacultyB from "./screens/FacultyB";
+import SyllabusB from "./screens/SyllabusB";
+import Committees from "./screens/Committees";
 
 function App() {
   return (
@@ -34,7 +39,7 @@ function App() {
             <Route path="/academic-calendar">
               <AcademicCalendar />
             </Route>
-            <Route path="/faculty">
+            <Route path="/faculty-d">
               <Faculty />
             </Route>
             <Route path="/why-pesiop">
@@ -42,6 +47,24 @@ function App() {
             </Route>
             <Route path="/approval">
               <Approval />
+            </Route>
+            <Route path="/achievements">
+              <StudentAchievements />
+            </Route>
+            <Route path="/principals-message">
+              <PrincipalsMessage />
+            </Route>
+            
+            <Route path="/faculty-b">
+              <FacultyB />
+            </Route>
+            
+            <Route path="/syllabus-b-pharm">
+              <SyllabusB />
+            </Route>
+            
+            <Route path="/committees">
+              <Committees />
             </Route>
             <Route strict path="/">
               <Home/>

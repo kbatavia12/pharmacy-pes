@@ -10,47 +10,43 @@ const Mission = () => {
   return (
     <div className="mission-container">
       <Navbar />
-      <TitleBar text="Mission and Vision" />
+      <TitleBar text="Vision and Mission" />
 
-      <LinkBar/>
+      <LinkBar />
 
       <div className="mission-area-container">
-        
+
         <div className="mission-main-area">
-          <h2>Vision and Mission</h2>
-          <p className = "bigText">
-            “HEALTH FOR ALL IS NATIONAL AND UNIVERSAL GOAL”
-            </p>
-            <p>
-              To achieve this goal we are going to conduct educational program
-              of pharmacy to add eligible and quality professional technical man
-              power to work in the field of.
-            </p>
-            <p> Industrial Pharmacy</p>
-            <p> Hospital and clinical Pharmacy</p>
-            <p>Community Pharmacy</p>
-            <p> Pharmaceutical Management and administration</p>
-            
-            
-            <p className = "bigText" >
-              Pharmaceutical Research As per current requirement of the society,
-              the following are the objectives:{" "}
-            </p>
-            <p>
-              1. To induce intellectual skills and motor skills in students by
-              maintain proper teacher student ratio
-            </p>
-            <p>
-              2. To add quality and efficient manpower this is required
-              currently for pharmacy field in India as well as worldwide.
-            </p>
-            <p>3. To give help and support low learners.</p>
-            <p>4. To pay attention to low achiever in the class.</p>
+          {/* <h2>Vision and Mission</h2> */}
+          <p className="bigText">
+           Vision
+          </p>
+          <p>
+            To nurture talent into all round excellence by providing an educational experience which is intellectually inspiring and technologically innovative and produce not just professionals but visionaries of tomorrow.
+          </p>
+
+
+
+          <p className="bigText" >
+            Mission
+          </p>
+          <p>
+            1. To draw a fine faculty base so that students can be educated in the most pragmatic and innovative methods drawn from the progressive professional colleges and universities across the globe.
+          </p>
+          <p>
+            2. To give a taste of creativity, innovation, research and the highest standards of professionalism in the students.
+          </p>
+          <p>3. To educate students with the fundamental knowledge, problem solving skills, business awareness and confidence required to be confident leaders in the global environment.</p>
+          <p>4. To contribute to the performance improvement of the corporate world through compatible academic programs, Pharma Development Programs and Pharma Consulting Services.</p>
+          
+          <p>5. To evoke a deep sense of goodness and beauty, in the young adults, graduating from the pharmacy institute of PES, to enable them to make responsible choices influenced by the institute.</p>
+          
+          <p>6. To guide budding Pharmacists into learning about the beauty and joy of learning so that they develop a life-long devotion towards learning.</p>
 
         </div>
       </div>
-        <Marquee/>
-        <Footer/>
+      <Marquee />
+      <Footer />
     </div>
   );
 };

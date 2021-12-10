@@ -19,7 +19,6 @@ const Navbar = () => {
         />
         <div style={styles.name}>
           <p style={styles.smallText}>Panchavati Education Societys</p>
-          <p style={styles.bigText}>Smt. Narmadaben Popatlal Thakkar</p>
           <p style={styles.bigText}>Institute of Pharmacy</p>
           <p style={styles.mediumText}>
             (Near Nimani Bus Stand, Panchavati, Nashik - 422003)

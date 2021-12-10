@@ -13,12 +13,134 @@ const AdmissionProcedure = () => {
     <div className="admission-container">
       <Navbar />
       <TitleBar text="Admission Procedure" />
-      <LinkBar/>
+      <LinkBar />
 
-     
+
+
+      <div>
+
+
+
+        <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
+
+          <h4 style = {{marginTop: '2%'}} >Admissions are open as per rules and regulations of DTE / State Government.
+          </h4>
+          
+          <h5>For more details contact: 0253-2514432 / 7741085506, 
+          </h5>
+          
+          <h5 style = {{marginBottom: '2%'}} >Email: shree1pharmacy@gmail.com 
+          </h5>
+
+          <h5>Details of Course Offered</h5>
+
+          <table style={{ width: '90%' }} class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Sr No.</th>
+                <th scope="col">Program</th>
+                <th scope="col">Intake</th>
+                <th scope="col">DTE Code</th>
+                <th scope="col">DTE Choice Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Bachelor of Pharmacy</td>
+                <td>60</td>
+                <td>5488</td>
+                <td>548882310</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Diploma in Pharmacy</td>
+                <td>60</td>
+                <td>5488</td>
+                <td>548882310</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+        <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
+          <h5>Fees Structure for Bachelor of Pharmacy and Diploma in Pharmacy course for the Academic Year 2021-2022</h5>
+
+          <table style={{ width: '90%' }} class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Program</th>
+                <th scope="col">Tuition Fee. (Rs.)</th>
+                <th scope="col">Development Fee (Rs.)</th>
+                <th scope="col">Total Fee (Rs.)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bachelor of Pharmacy</td>
+                <td>63000</td>
+                <td>7000</td>
+                <td>70000</td>
+                {/* <td>548882310</td> */}
+              </tr>
+
+              <tr>
+                <td>Diploma in Pharmacy</td>
+                <td>54545</td>
+                <td>5455</td>
+                <td>60000</td>
+                {/* <td>548882310</td> */}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+        <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
+          <h5>Important Links for Admission Process:
+          </h5>
+
+          <table style={{ width: '90%' }} class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Program</th>
+                <th scope="col">Brochures</th>
+                <th scope="col">Link for admission process</th>
+                {/* <th scope="col">Total Fee (Rs.)</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bachelor of Pharmacy</td>
+                <td>Information Brochures</td>
+                <td><a target="_blank" style={{ color: 'black' }} href="https://ph2021.mahacet.org/">https://ph2021.mahacet.org/</a></td>
+                {/* <td>70000</td> */}
+                {/* <td>548882310</td> */}
+              </tr>
+
+              <tr>
+                <td>Diploma in Pharmacy</td>
+                <td>Information Brochures</td>
+                <td><a target="_blank" style={{ color: 'black' }} href="https://posthscdiploma2021.dtemaharashtra.gov.in/StaticPages/HomePage">https://posthscdiploma2021.dtemaharashtra.gov.in/StaticPages/HomePage</a></td>
+
+                {/* <td>60000</td> */}
+                {/* <td>548882310</td> */}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+
+
       <div className="admission-area-container">
-        
-        
+
+
         <div className="main-area">
           {/* Main area */}
           <div>
@@ -83,9 +205,9 @@ const AdmissionProcedure = () => {
         </div>
       </div>
       <div>
-          <Marquee/>
-          <Footer/>
-        </div>
+        <Marquee />
+        <Footer />
+      </div>
     </div>
   );
 };

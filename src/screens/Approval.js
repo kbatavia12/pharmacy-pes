@@ -2,6 +2,10 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
 import DTE from "../assets/DTE APPROVAL.pdf";
+import PCI from "../assets/Decision Letter PCI (2021-2022).pdf";
+import DBATU from "../assets/DBATU Affiliation A Y 2021-22.pdf";
+import GR from "../assets/G. R. for B. Pharmacy.pdf";
+import MSBTE from "../assets/MSBTE Affiliation 21-22.pdf";
 import LinkBar from "../components/LinkBar";
 
 const Approval = () => {
@@ -12,9 +16,25 @@ const Approval = () => {
       <LinkBar/>
 
       <div className="main-area">
-        <h1>PCI Decision Letter</h1>
-        <img style  ={{width: "75%"}} src="https://firebasestorage.googleapis.com/v0/b/database-entry-69b80.appspot.com/o/PCI%20Decision%20Letter.jpg?alt=media&token=6589215e-42cc-4b2a-9f1d-1f733bed990f"></img>
-
+        <h1>DBATU Affiliation</h1>
+        <object
+          className="staff-pdfFile"
+          data={DBATU}
+          type="application/pdf"
+          width="75%"
+          height="800px"
+        ></object>
+        
+        <h1>Decision Letter PCI</h1>
+        <object
+          className="staff-pdfFile"
+          data={PCI}
+          type="application/pdf"
+          width="75%"
+          height="800px"
+        ></object>
+        
+        
         <h1>DTE Approval</h1>
         <object
           className="staff-pdfFile"
@@ -23,9 +43,25 @@ const Approval = () => {
           width="75%"
           height="800px"
         ></object>
-
-        <h1>MSBTE Certificate</h1>
-        <img style = {{width: "75%"}} src="https://firebasestorage.googleapis.com/v0/b/database-entry-69b80.appspot.com/o/MSBTE%20Certificate.jpg?alt=media&token=757f7c74-e317-4515-aef2-8d9b27757787"></img>
+        
+        
+        <h1>G.R For B.Pharmacy</h1>
+        <object
+          className="staff-pdfFile"
+          data={GR}
+          type="application/pdf"
+          width="75%"
+          height="800px"
+        ></object>
+        
+        <h1>MSBTE Affiliation</h1>
+        <object
+          className="staff-pdfFile"
+          data={MSBTE}
+          type="application/pdf"
+          width="75%"
+          height="800px"
+        ></object>
       </div>
     </div>
   );

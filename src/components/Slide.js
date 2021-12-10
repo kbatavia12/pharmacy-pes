@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import landingData from "../assets/data";
-import './css/Slide.css';
+import { images } from "../assets/data";
+import "./css/Slide.css";
 
+const Slide = ({ activeIndex }) => {
+    const [data, setData] = useState(images);
 
-const Slide = ({activeIndex}) => {
-  const [data, setData] = useState(landingData);
-
-  return (
-    <div>
-      {data.map((item, index) => (
-        <div className={index === activeIndex ? "active" : "slide"}>
-          <img src={item.image}></img>
+    return (
+        <div>
+            {data.map((item, index) => (
+                <div className={index === activeIndex ? "active" : "slide"}>
+                    <img style = {{height: "80vh"}} src={item.image}></img>
+                </div>
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default Slide;
