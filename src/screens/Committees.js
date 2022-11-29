@@ -2,6 +2,7 @@ import React from 'react'
 import LinkBar from '../components/LinkBar';
 import Navbar from '../components/Navbar';
 import TitleBar from '../components/TitleBar';
+import CommitteesI from '../assets/List of Committee  26.11.2022.pdf';
 
 const Committees = () => {
     return (
@@ -12,7 +13,20 @@ const Committees = () => {
 
 
 
-            <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
+            <div className="main-area">
+
+                <h2>Institutional Committees</h2>
+                <object
+                    className="staff-pdfFile"
+                    data={CommitteesI}
+                    type="application/pdf"
+                    width="75%"
+                    height="800px"
+                ></object>
+            </div>
+
+
+            {/* <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
 
 
                 <table style={{ width: '90%' }} class="table">
@@ -116,13 +130,13 @@ const Committees = () => {
                         </tr><tr>
                             <th scope="row">13</th>
                             <td>Dr. Makarand S. Gambhire</td>
-                            <td>Principal</td>
+                            <td>Professor and In-Charge Principal</td>
                             <td>Member Secretary</td>
 
                         </tr>
                     </tbody>
-                </table>
-            </div>
+                </table> */}
+            {/* </div> */}
 
         </div>
     )

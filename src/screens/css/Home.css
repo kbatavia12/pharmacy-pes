@@ -69,3 +69,7 @@ a:hover {
     }
 
 }
+
+.ragging-link:hover {
+    text-decoration: underline;
+}

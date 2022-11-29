@@ -36,117 +36,102 @@ const Home = () => {
             <Link to="/admission">Admissions</Link>
             <Link to="/academic-calendar">Academics</Link>
             <Link to="/about">About</Link>
+            <a target="_blank" href="https://www.vmedulife.com/public/auth/#/login/spesiop-nashik">ERP Login</a>
           </div>
         ) : null}
       </div>
 
 
-      <div className="image-carousel">
+      {/* <div className="image-carousel">
         <Slider />
-      </div>
+      </div> */}
 
       {/* <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2%', marginBottom: '2%'}} >
           <img style = {{}}  src = {New}/>
         </div> */}
 
+      <div className="main-area">
+        <h2>About us</h2>
+        <img style ={{width: '50%'}}src="https://firebasestorage.googleapis.com/v0/b/school-test-app-e4e31.appspot.com/o/1_Photo%20-%201.jpg?alt=media&token=71ea7714-745c-4459-b79e-eaf22c4b1cb5"></img>
+        <p>
+          Shree Panchavati Education Society is registered trust working in
+          education field since last 57 years. The society owns a land of 7
+          acres near Nimani Bus stand, Panchavati, Nashik. Society constructed
+          new building to provide essential carpet over to start New Diploma
+          in Pharmacy course according to norms of Pharmacy Council Of India.
+          We have also provided first class amenities in the new building to
+          meet requirement of modern educational standard. On behalf of
+          society, I cordially invite you to personally visit our campus. We
+          are sure; you will appreciate our efforts to meet our standards of
+          Pharmacy education as per current requirements of pharmacy field.
+        </p>
+        <p>
+          In recent years pharmacy profession has undergone a sea change with
+          novel developments in the design, production, formulation and
+          testing of drugs keeping pace with these charges the content of
+          tools of Pharmacy education are also changed. Alongside, the role of
+          pharmacist is refined with the increasing needs of his services to
+          the society and profession. Our SPES Society’s Institute of Pharmacy
+          shall commit you to become competent person in the Pharmacy field in
+          near future.
+        </p>
+        <p>
+          {" "}
+          Though ours is a new institution, we will be providing first class
+          amenities, highly experienced teaching faculty, well equipped
+          laboratories, good ventilated class rooms, tutorial rooms, library,
+          reading room and advanced computer internet facilities in the
+          institute. The institute is located at the centre of nashik city and
+          thus students have easy commutation . We shall make exciting career
+          for you in pharmacy so that you can work efficiently in India and
+          worldwide.
+        </p>
 
-      <div className="trustee-card-container">
-        <TrusteeCard
-          name="Narendrabhai Thakkar"
-          title="[President]"
-          image={One}
-          info="It is indeed a pleasure for me to address you through this brochure. Shree Panchavati Education Society is a registered trust working in the education field since 1933. The society owns land of 7 acres near Nimani Bus Stand, Panchavati, Nashik. The society constructed buildings to provide essential carpets to start Diploma and Degree programmes in Pharmacy according to the norms of the Pharmacy Council of India. We have also provided first-class amenities in the building to meet the requirements of modern educational standards. On behalf of society, I cordially invite you to personally visit our campus. We are sure you will appreciate our efforts to meet our standards of Pharmacy education as per current requirements of the pharmacy field."
-        />
 
-
-
-
-        <TrusteeCard
-          name="Dr. Anil Badiyani"
-          title="[Chairman]"
-          image={Two}
-          info="It is my privilege as the Chairman of the Shree Panchavati Education Society Institute of Pharmacy to extend to you a warm welcome to our campus and share a few thoughts with you from our perspective. In recent years, the pharmacy profession has undergone a sea change with novel developments in the design, production, formulation, and testing of drugs. Keeping pace with these changes, the content of tools of pharmacy education has also changed. Along the way, the pharmacist's role is evolving in response to the growing demand for his services to society and the profession. Our SPES Institute of Pharmacy will commit you to becoming a competent person in the pharmacy field in the future"
-        />
-        <TrusteeCard
-          name="Vikram Kapadia"
-          title="[Secretary]"
-          image={Three}
-          info="On behalf of the Shree Panchavati Education Society’s Institute of Pharmacy, I welcome you all. Being the secretary and with powers bestowed on me by the Shree Panchavati Education Society, I hereby assure budding pharmacists and encourage them to become participants in our D.Pharm and B.Pharm admitted lists. Though ours is a new institution, we will be providing first-class amenities, highly experienced teaching faculty, well-equipped laboratories, well ventilated classrooms, tutorial rooms, and advanced computer internet facilities in the institute. The institute is located at the centre of Nashik city, and thus, students have easy access to transportation. We shall prepare you for an exciting career in pharmacy so that you can work efficiently in India and worldwide."
-        />
-      </div>
-
-      <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
-        <div style = {{ border: '1px solid black', display: 'grid', placeItems: 'center', padding: '1%', width: '50%'}} >
-          <a style={{ color: "black" }} href="https://www.antiragging.in/Site/Contactus.aspx" >National Anti Ragging Help Line (UGC Crisis Hotline) 24x7
-          </a>
-
-
-          <h5>Phone No. 1800-180-5522</h5>
-          <h5>Email: helpline@antiragging.in</h5>
         </div>
+
+        <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
+          <div style={{ border: '1px solid black', display: 'grid', placeItems: 'center', padding: '1%', width: '50%' }} >
+            <a className="ragging-link" style={{ color: "black" }} href="https://www.antiragging.in/Site/Contactus.aspx" >National Anti Ragging Help Line (UGC Crisis Hotline) 24x7
+            </a>
+
+
+            <h5>Phone No. 1800-180-5522</h5>
+            <h5>Email: helpline@antiragging.in</h5>
+          </div>
+        </div>
+
+
+        <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '1em' }} className="table-responsive" >
+          <h1>Right to Information Committee</h1>
+          <table style={{ width: '90%' }} class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Sr No.</th>
+                <th scope="col">Name of Members (Designation)</th>
+                <th scope="col">Designation</th>
+                <th scope="col">Contact No.</th>
+                {/* <th scope="col">DTE Choice Code</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mr. Khairnar Rakesh Chandrakant
+                  (Office Superintendent)
+                </td>
+                <td>Information Officer
+                </td>
+                <td>9834563650</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <Footer />
       </div>
-
-
-      <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
-
-        <table style={{ width: '90%' }} class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Sr No.</th>
-              <th scope="col">Name of Members (Designation)</th>
-              <th scope="col">Designation</th>
-              <th scope="col">Contact No.</th>
-              {/* <th scope="col">DTE Choice Code</th> */}
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Dr. Gambhire Makarand Suresh
-                (Principal)
-              </td>
-              <td>Appealing Officer
-
-              </td>
-              <td>0253-2514432
-
-              </td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>Mrs. Patil Sarika Vinayak (Lecturer)
-
-              </td>
-              <td>Information Officer
-
-              </td>
-              <td>7720002333</td>
-            </tr>
-
-
-            <tr>
-              <td>3</td>
-              <td>Mr. Khairnar Rakesh Chandrakant
-                (Office Superintendent)
-
-
-              </td>
-              <td>Information Officer
-
-
-
-              </td>
-              <td>9834563650</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <Marquee />
-      <Footer />
-    </div>
-  );
+      );
 };
 
-export default Home;
+      export default Home;

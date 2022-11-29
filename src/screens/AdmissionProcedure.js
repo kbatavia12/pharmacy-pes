@@ -26,7 +26,7 @@ const AdmissionProcedure = () => {
           <h4 style = {{marginTop: '2%'}} >Admissions are open as per rules and regulations of DTE / State Government.
           </h4>
           
-          <h5>For more details contact: 0253-2514432 / 7741085506, 
+          <h5>For more details contact: 0253-2514432 / 9881930891, 
           </h5>
           
           <h5 style = {{marginBottom: '2%'}} >Email: shree1pharmacy@gmail.com 
@@ -66,7 +66,7 @@ const AdmissionProcedure = () => {
 
 
 
-        <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
+        {/* <div style={{ width: "100%", display: 'grid', placeItems: 'center', marginTop: '.5em' }} className="table-responsive" >
           <h5>Fees Structure for Bachelor of Pharmacy and Diploma in Pharmacy course for the Academic Year 2021-2022</h5>
 
           <table style={{ width: '90%' }} class="table">
@@ -84,7 +84,6 @@ const AdmissionProcedure = () => {
                 <td>63000</td>
                 <td>7000</td>
                 <td>70000</td>
-                {/* <td>548882310</td> */}
               </tr>
 
               <tr>
@@ -92,11 +91,10 @@ const AdmissionProcedure = () => {
                 <td>54545</td>
                 <td>5455</td>
                 <td>60000</td>
-                {/* <td>548882310</td> */}
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
 
 
 
@@ -205,7 +203,7 @@ const AdmissionProcedure = () => {
         </div>
       </div>
       <div>
-        <Marquee />
+        
         <Footer />
       </div>
     </div>

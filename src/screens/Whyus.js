@@ -61,7 +61,7 @@ const Whyus = () => {
           </ul>
         </div>
       </div>
-      <Marquee />
+      
       <Footer />
     </div>
   );

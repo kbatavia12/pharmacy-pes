@@ -1,18 +1,93 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FacultyCard from '../components/FacultyCard';
 import Footer from '../components/Footer';
 import LinkBar from '../components/LinkBar';
-import Marquee from '../components/Marquee';
 import Navbar from '../components/Navbar';
 import TitleBar from '../components/TitleBar';
-import MKG from "../assets/Dr. Makarand Gambhire photo.jpg";
 import MT from "../assets/Manisha Tayde.png";
-import VG from "../assets/Vaishali Gambhire.jpg";
 import YA from "../assets/Yogita Ahire.png";
-import KM from "../assets/Kirti Mahale.jpg";
+import PU from "../assets/Prof.Pallavi G.Ugale.jpg";
+import AC from "../assets/Prof.Amol R.Chavan.jpg";
+import SG from "../assets/Mr.Sagar S.Ghate.jpg";
+import RM from "../assets/Prof.Raj A. Mhaske.JPG";
+import RG from "../assets/Dr.Rahul B. Ghuge.jpeg";
+import MG from "../assets/Prof.Monali D.Ghodekar (Pund).jpg";
+import KS from "../assets/Kokate S.V.jpeg";
+import GC from '../assets/GC.jpg'
+import RD from '../assets/RD.jpg'
 
+
+const staffDetails = [
+    {
+        name: "Dr.Manisha Ashwin Tayde ",
+        designation: "In-charge Principal",
+        photo: MT,
+        qualification: "M.Pharm Ph.D",
+        email: "mtayde82@gmail.com"
+    },{
+        name: "Dr.Ghanshyam N.Chaudhari ",
+        designation: "Associate Professor",
+        photo: GC,
+        qualification: "M.Pharm,Ph.D. (Pharmaceutics) ",
+        email: ""
+    },
+
+    {
+        name: "Mrs. Yogita Girish Ahire",
+        designation: "Assistant Professor",
+        photo: YA,
+        qualification: "M.Pharm",
+        email: "yogitaahire111219@gmail.com"
+    },
+    {
+        name: "Mr.Kokate Shekhar Vikram",
+        designation: "Assistant Professor",
+        photo: KS,
+        qualification: "M.Pharmacy (QAT)",
+        email: "shekhar543213@gmail.com"
+    },
+    {
+        name: "Mrs. Pallavi Gaurav Ugale",
+        designation: "Assistant Professor",
+        photo: PU,
+        qualification: "M.Pharm",
+        email: "palluugale@gmail.com"
+    },
+    {
+        name: "Mr. Amol Ravindra Chavan",
+        designation: "Assistant Professor",
+        photo: AC,
+        qualification: "M.Pharm",
+        email: "amolrc25@gmail.com"
+    }, {
+        name: "Mr. Rajratan Ashokrao Maske",
+        designation: "Assistant Professor",
+        photo: RM,
+        qualification: "M.Pharm",
+        email: "mraj80551@gmail.com"
+    }, {
+        name: "Mrs. Monali Dnyaneshwar Ghodekar",
+        designation: "Associate professor",
+        photo: MG,
+        qualification: "M.Pharm",
+        email: "monalighodekar7@gmail.com"
+    },
+    
+    {
+        name: " Dr. Rupali Sampatrao Dhikale",
+        designation: "Assistant Professor",
+        photo: RD,
+        qualification: "Ph. D (M. Pharm in Pharmacognosy)",
+        email: "rupadhikale@gmail.com"
+    },
+
+
+
+]
 
 const FacultyB = () => {
+
+
     return (
         <div>
             <Navbar />
@@ -20,60 +95,26 @@ const FacultyB = () => {
             <LinkBar />
 
 
+
+
             <div className="faculty-area-container">
                 <div className="main-area">
-                    <FacultyCard
-                        // pressHandler={() => setShow1(!show1)}
-                        image={MKG}
-                        name="Name: Dr.Makarand S. Gambhire"
-                        designation="Designation: Principal"
-                        email="Email: makarandgambhire@gmail.com"
-                        qualification="Qualification: M.Pharm Ph.D"
-                    />
+                    {staffDetails.map((staff, i) => (
 
-                    <FacultyCard
-                        // pressHandler={() => setShow2(!show2)}
-                        image={VG}
-                        name="Name: Dr.Vaishali Patil-Gambhire"
-                        designation="Designation: Associate Professor"
-                        email="Email: vaishaligambhire@gmail.com "
-                        qualification="Qualification: M.Pharm Ph.D"
-                    />
-
-                    <FacultyCard
-                        // pressHandler={() => setShow3(!show3)}
-                        image={MT}
-                        name="Name: Dr.Manisha Ashwin Tayde "
-                        designation="Designation: Associate Professor"
-                        email="Email: mtayde82@gmail.com"
-                        qualification="Qualification: M.Pharm Ph.D"
-                    />
-
-                    <FacultyCard
-                        // pressHandler={() => setShow4(!show4)}
-
-                        image={KM}
-                        name="Name: Ms. Kirti Dattatraya Mahale"
-                        designation="Designation: Assitant Professor"
-                        email="Email: kirtimahale23@gmail.com"
-                        qualification="Qualification: M.Pharm"
-                    />
-                    
-                    
-                    <FacultyCard
-                        // pressHandler={() => setShow4(!show4)}
-
-                        image={YA}
-                        name="Name: Mrs. Yogita Girish Ahire"
-                        designation="Designation: Assitant Professor"
-                        email="Email: xyz@gmail.com"
-                        qualification="Qualification: M.Pharm"
-                    />{" "}
+                        <FacultyCard
+                            key={i}
+                            image={staff.photo}
+                            name={`Name: ${staff.name}`}
+                            designation={`Designation: ${staff.designation}`}
+                            email={`Email: ${staff.email}`}
+                            qualification={`Qualification: ${staff.qualification}`}
+                        />
+                    ))}
                 </div>
             </div>
 
 
-            <Marquee />
+
             <Footer />
 
         </div>

@@ -30,7 +30,7 @@ const CodeofConduct = () => {
           <p>Anybody found guilty of such acts defined as ragging shall be liable for punishment with imprisonment up to two years and a fine upto Rs. 10000.00. Any student convicted of an offense under section 4 shall be dismissed from the institution summarily. Disputes if any, will be subjected to Nashik Jurisdiction only. As per the directives of the Hon’ble Supreme Court of India, no one is allowed to use cell phones in an academic institute. Hence , usage of cell phones within the College Premices, at any given time will be perceived as breach of law and will be liable for appropriate action from the competent authority.</p>
         </div>
       </div>
-      <Marquee />
+      
       <Footer />
     </div>
   );

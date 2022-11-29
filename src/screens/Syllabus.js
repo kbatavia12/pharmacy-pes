@@ -25,9 +25,9 @@ const Syllabus = () => {
         <div className="main-area">
           <h2>Syllabus for D.Pharm</h2>
           <div style = {{display: 'flex', width: '90vw', justifyContent: 'space-between'}} >
-
+{/* 
           <object style = {{marginRight: '5%'}} className="pdfFile" data={syllabusOld} type="application/pdf" width="50%" height="800px">
-          </object>
+          </object> */}
           <object className="pdfFile" data={syllabusNew} type="application/pdf" width="50%" height="800px">
           </object>
 
@@ -39,7 +39,7 @@ const Syllabus = () => {
         </div>
       </div>
       <div>
-        <Marquee />
+        
         <Footer />
       </div>
     </div>

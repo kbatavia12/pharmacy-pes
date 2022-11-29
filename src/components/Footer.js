@@ -61,15 +61,7 @@ const Footer = () => {
                             style={{ color: "white", marginLeft: "5px" }}
                         />
                         <p style={{ color: "white", marginLeft: "5px" }}>
-                            +91 7741085506
-                        </p>
-                    </div>
-                    <div className="address">
-                        <PhoneIcon
-                            style={{ color: "white", marginLeft: "5px" }}
-                        />
-                        <p style={{ color: "white", marginLeft: "5px" }}>
-                            +91 9403706683
+                            +91 9881930891
                         </p>
                     </div>
                     <div className="address">
@@ -95,9 +87,13 @@ const Footer = () => {
 
                 <div className="form-container footer-container">
                     <h6 style={{ color: "white" }}>Academics</h6>
-                    <Link to="/approval">Library</Link>
+                    <Link to="/library">Library</Link>
 
                     <Link to="/academic-calendar">Academic Calendar</Link>
+                    <Link to="/statutory-committees">Statutory Committees</Link>
+                    <Link to="/admitted-students">Admitted Students</Link>
+                    <Link to="/affiliating-university">Affiliating University</Link>
+                    <Link to="/fra">FRA</Link>
                 </div>
 
                 <div className="form-container footer-container">
@@ -112,7 +108,7 @@ const Footer = () => {
             <div className="footer-top">
                 <div className="link-container footer-container">
                     <h6 style={{ color: "white" }}>Time Table</h6>
-                    <Link to="/code-of-conduct">Examination</Link>
+                    <Link to="/exam">Examination</Link>
                     <Link to="/achievements">Student's Achievement</Link>
                     <Link to="/mission">Student's Activity</Link>
                     <Link to="/committees">Institutional Committees</Link>

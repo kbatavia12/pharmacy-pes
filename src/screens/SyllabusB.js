@@ -27,7 +27,7 @@ const SyllabusB = () => {
                 </div>
             </div>
             <div>
-                <Marquee />
+                
                 <Footer />
             </div>
         </div>

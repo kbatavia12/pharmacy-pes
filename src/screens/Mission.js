@@ -45,7 +45,7 @@ const Mission = () => {
 
         </div>
       </div>
-      <Marquee />
+      
       <Footer />
     </div>
   );
