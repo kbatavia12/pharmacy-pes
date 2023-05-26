@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import TitleBar from "../components/TitleBar";
-import StatutoryCommitteesPdf from "../assets/Statutory Committees.pdf";
+import CommitteesI from '../assets/List of Committee  26.11.2022.pdf';
+
 
 import LinkBar from "../components/LinkBar";
 import Marquee from "../components/Marquee";
@@ -15,14 +16,14 @@ const StatutoryCommittees = () => {
             <LinkBar />
 
             <div className="main-area">
+                <h1>Statutory Committees</h1>
                 <object
                     className="staff-pdfFile"
-                    data={StatutoryCommitteesPdf}
+                    data={CommitteesI}
                     type="application/pdf"
                     width="75%"
                     height="800px"
                 ></object>
-
             </div>
 
             <div>

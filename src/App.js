@@ -21,6 +21,7 @@ import AffiliatingUniversity from "./screens/AffliliatingUniversity";
 import Library from "./screens/Library";
 import Examination from "./screens/Examination";
 import SIF from "./screens/SIF";
+import FRA from "./screens/FRA";
 
 function App() {
   return (
@@ -92,6 +93,10 @@ function App() {
           
           <Route path="/sif">
             <SIF />
+          </Route>
+          
+          <Route path="/fra">
+            <FRA />
           </Route>
         
           <Route strict path="/">
